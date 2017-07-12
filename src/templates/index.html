@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width" />
+  <script src="/static/assets/js/lib/react.min.js"></script>
+  <script src="/static/assets/js/lib/react-dom.min.js"></script>
+  <script src="/static/assets/js/lib/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.12.1/dojo/dojo.js"></script>
+  <link rel="stylesheet" href="/static/assets/css/bundle.css">
+</head>
+<body>
+  <div id="root" className="root">{{ pageContent }}</div>
+  <script src="/static/assets/js/{{ pageFile }}.js"></script>
+  <script type="text/javascript">
+    window.PageData = {{ pageData }}
+    window.Config = {{ appConfig }}
+    ReactDOM.render(React.createElement({{ pageType }}, null), document.getElementById("root"));
+  </script>
+</body>
+</html>

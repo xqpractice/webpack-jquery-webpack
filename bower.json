@@ -1,0 +1,28 @@
+{
+  "name": "our-manager",
+  "description": "Manager ours",
+  "main": "index.js",
+  "authors": [
+    "thomas"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "Express",
+    "React",
+    "Karma",
+    "Webpack"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "dojo": "^1.12.2"
+  }
+}
